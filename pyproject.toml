@@ -8,7 +8,6 @@ dependencies = ["diffusers>=0.27.2", "transformers>=4.38.2", "accelerate>=0.27.2
     
 [project.urls]
 Repository = "https://github.com/1038lab/ComfyUI-MiniMax-Remover"
-#  Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]
 PublisherId = "ailab"
