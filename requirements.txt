@@ -1,0 +1,8 @@
+diffusers>=0.27.2
+transformers>=4.38.2
+accelerate>=0.27.2
+decord>=0.6.0
+torch
+torchvision
+torchaudio
+huggingface-hub
