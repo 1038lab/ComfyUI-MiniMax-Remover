@@ -1,0 +1,16 @@
+[project]
+name = "ComfyUI-MiniMax-Remover"
+description = "ComfyUI-MiniMax-Remover is a custom node for ComfyUI that enables fast and efficient object removal using minimax optimization. It works in two stages: first, it trains a remover with a simplified DiT model; then it distills a robust version using CFG guidance and fewer inference steps."
+version = "0.0.0"
+license = {file = "LICENSE"}
+
+dependencies = ["diffusers>=0.27.2", "transformers>=4.38.2", "accelerate>=0.27.2", "decord>=0.6.0", "torch", "torchvision", "torchaudio", "huggingface-hub"]
+    
+[project.urls]
+Repository = "https://github.com/1038lab/ComfyUI-MiniMax-Remover"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = "ailab"
+DisplayName = "ComfyUI-MiniMax-Remover"
+Icon = ""
