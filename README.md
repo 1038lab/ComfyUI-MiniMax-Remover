@@ -3,7 +3,7 @@
 
 A ComfyUI custom node for fast and effective video/image object removal using MiniMax optimization. Remove objects from videos and images with high quality results using only 6-12 inference steps.
 
-![Image subject Remover](https://github.com/user-attachments/assets/55394115-d88a-4bca-b70d-29ce51e97ead)
+
 
 ## ✨ Features
 
@@ -14,6 +14,8 @@ A ComfyUI custom node for fast and effective video/image object removal using Mi
 - **📱 Flexible**: Supports both single images and video processing
 - **⚡ Optimized**: Automatic model downloading and caching
 - **💡 Smart Hints**: Automatic backend suggestions for optimal settings
+
+![Image subject Remover](https://github.com/user-attachments/assets/55394115-d88a-4bca-b70d-29ce51e97ead)
 
 ## 🛠️ Installation
 
