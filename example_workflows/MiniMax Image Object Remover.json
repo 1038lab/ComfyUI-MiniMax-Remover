@@ -1,0 +1,554 @@
+{
+  "id": "666b82c6-bc0b-4c5b-9b60-58176aee9b07",
+  "revision": 0,
+  "last_node_id": 53,
+  "last_link_id": 155,
+  "nodes": [
+    {
+      "id": 3,
+      "type": "AILab_LoadImage",
+      "pos": [
+        90,
+        -260
+      ],
+      "size": [
+        580,
+        990
+      ],
+      "flags": {
+        "pinned": true
+      },
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            142
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "name": "MASK_IMAGE",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "name": "WIDTH",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "HEIGHT",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "Node name for S&R": "AILab_LoadImage",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "41447554.jpg",
+        "alpha",
+        1.0000000000000002,
+        "longest_side",
+        800,
+        "image"
+      ],
+      "color": "#2e3e57",
+      "bgcolor": "#4b5b73"
+    },
+    {
+      "id": 11,
+      "type": "AILab_Preview",
+      "pos": [
+        1540,
+        -40
+      ],
+      "size": [
+        570,
+        760
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 112
+        },
+        {
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "Node name for S&R": "AILab_Preview",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [],
+      "color": "#2e3e57",
+      "bgcolor": "#4b5b73"
+    },
+    {
+      "id": 29,
+      "type": "RMBG",
+      "pos": [
+        1230,
+        -260
+      ],
+      "size": [
+        285.8511657714844,
+        302
+      ],
+      "flags": {
+        "pinned": true
+      },
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 143
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            151
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            150,
+            152
+          ]
+        },
+        {
+          "name": "MASK_IMAGE",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "Node name for S&R": "RMBG",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "RMBG-2.0",
+        1,
+        1024,
+        0,
+        0,
+        false,
+        false,
+        "Alpha",
+        "#222222"
+      ],
+      "color": "#222e40",
+      "bgcolor": "#364254"
+    },
+    {
+      "id": 40,
+      "type": "MinimaxImageRemover",
+      "pos": [
+        1230,
+        -530
+      ],
+      "size": [
+        285.8511657714844,
+        210
+      ],
+      "flags": {
+        "pinned": true
+      },
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 149
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 150
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 153
+        },
+        {
+          "name": "transformer",
+          "type": "TRANSFORMER",
+          "link": 154
+        },
+        {
+          "name": "scheduler",
+          "type": "SCHEDULER",
+          "link": 155
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            112
+          ]
+        }
+      ],
+      "properties": {
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "Node name for S&R": "MinimaxImageRemover",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        12,
+        6,
+        268860912614053,
+        "randomize"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 48,
+      "type": "ImageSizeAdjuster",
+      "pos": [
+        850,
+        -260
+      ],
+      "size": [
+        281.1890563964844,
+        150
+      ],
+      "flags": {
+        "collapsed": false,
+        "pinned": true
+      },
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 142
+        },
+        {
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "adjusted_image",
+          "type": "IMAGE",
+          "links": [
+            143,
+            149
+          ]
+        },
+        {
+          "name": "adjusted_mask",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "Node name for S&R": "ImageSizeAdjuster",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        16,
+        "resize",
+        1,
+        "black"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 52,
+      "type": "AILab_Preview",
+      "pos": [
+        690,
+        110
+      ],
+      "size": [
+        830,
+        620
+      ],
+      "flags": {
+        "pinned": true
+      },
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 151
+        },
+        {
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": 152
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "Node name for S&R": "AILab_Preview",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [],
+      "color": "#2e3e57",
+      "bgcolor": "#4b5b73"
+    },
+    {
+      "id": 53,
+      "type": "MinimaxModelLoader",
+      "pos": [
+        850,
+        -490
+      ],
+      "size": [
+        281.1890563964844,
+        170
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "vae",
+          "type": "VAE",
+          "links": [
+            153
+          ]
+        },
+        {
+          "name": "transformer",
+          "type": "TRANSFORMER",
+          "links": [
+            154
+          ]
+        },
+        {
+          "name": "scheduler",
+          "type": "SCHEDULER",
+          "links": [
+            155
+          ]
+        }
+      ],
+      "properties": {
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "widget_ue_connectable": {},
+        "Node name for S&R": "MinimaxModelLoader"
+      },
+      "widgets_values": [
+        "Auto",
+        "float16",
+        "auto",
+        false
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    }
+  ],
+  "links": [
+    [
+      112,
+      40,
+      0,
+      11,
+      0,
+      "IMAGE"
+    ],
+    [
+      142,
+      3,
+      0,
+      48,
+      0,
+      "IMAGE"
+    ],
+    [
+      143,
+      48,
+      0,
+      29,
+      0,
+      "IMAGE"
+    ],
+    [
+      149,
+      48,
+      0,
+      40,
+      0,
+      "IMAGE"
+    ],
+    [
+      150,
+      29,
+      1,
+      40,
+      1,
+      "MASK"
+    ],
+    [
+      151,
+      29,
+      0,
+      52,
+      0,
+      "IMAGE"
+    ],
+    [
+      152,
+      29,
+      1,
+      52,
+      1,
+      "MASK"
+    ],
+    [
+      153,
+      53,
+      0,
+      40,
+      2,
+      "VAE"
+    ],
+    [
+      154,
+      53,
+      1,
+      40,
+      3,
+      "TRANSFORMER"
+    ],
+    [
+      155,
+      53,
+      2,
+      40,
+      4,
+      "SCHEDULER"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ue_links": [],
+    "ds": {
+      "scale": 0.5131581182307067,
+      "offset": [
+        905.841588158247,
+        890.3837884502425
+      ]
+    },
+    "links_added_by_ue": [],
+    "frontendVersion": "1.22.2",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
