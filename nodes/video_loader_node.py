@@ -14,7 +14,7 @@ except ImportError as e:
 
 class VideoLoaderNode:
     
-    CATEGORY = "video/minimax"
+    CATEGORY = "🧪AILab/🧼MiniMax-Remover"
     RETURN_TYPES = ("IMAGE", "INT")
     RETURN_NAMES = ("video_frames", "frame_count")
     FUNCTION = "load_video"
