@@ -538,13 +538,13 @@
         "secondTabText": "Send Back",
         "secondTabOffset": 80,
         "secondTabWidth": 65,
-        "widget_ue_connectable": {},
-        "Node name for S&R": "ImageSizeAdjuster"
+        "Node name for S&R": "ImageSizeAdjuster",
+        "widget_ue_connectable": {}
       },
       "widgets_values": [
         16,
         "crop",
-        1,
+        0.5,
         "black"
       ],
       "color": "#223",
@@ -596,8 +596,8 @@
         "secondTabText": "Send Back",
         "secondTabOffset": 80,
         "secondTabWidth": 65,
-        "widget_ue_connectable": {},
-        "Node name for S&R": "MinimaxModelLoader"
+        "Node name for S&R": "MinimaxModelLoader",
+        "widget_ue_connectable": {}
       },
       "widgets_values": [
         "Auto",
@@ -720,10 +720,10 @@
   "extra": {
     "ue_links": [],
     "ds": {
-      "scale": 0.9090909090909095,
+      "scale": 0.5644739300537776,
       "offset": [
-        -369.6127847209093,
-        7.401469854544757
+        11.660448279090701,
+        755.1855288545446
       ]
     },
     "links_added_by_ue": [],
