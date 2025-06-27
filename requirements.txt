@@ -1,8 +1,13 @@
-diffusers>=0.27.2
-transformers>=4.38.2
-accelerate>=0.27.2
+# Core dependencies for MiniMax-Remover ComfyUI node
+
+torch>=1.13.0
+diffusers>=0.21.0
 decord>=0.6.0
-torch
-torchvision
-torchaudio
-huggingface-hub
+pillow>=8.0.0
+einops>=0.6.0
+scipy>=1.9.0
+numpy>=1.21.0
+opencv-python>=4.5.0
+huggingface_hub>=0.16.0
+omegaconf>=2.1.0
+accelerate>=0.20.0
